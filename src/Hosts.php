@@ -43,7 +43,7 @@ class Hosts extends \Codeception\Module
     {
         $hosts = array();
         $c     = new CurlRequest();
-        $r     = $c->restCall("https://nimbul-fe.prd.nytimes.com/api/v1/instances", "GET", null, array("Authorization: Token token=") . $this->config['token']);
+        $r     = $c->restCall("https://nimbul-fe.prd.nytimes.com/api/v1/instances", "GET", null, array("Authorization: Token token=" . $this->config['token']) );
         if (!empty($r[200])) {
             $items  = $r[200];
             $hosts  = array();

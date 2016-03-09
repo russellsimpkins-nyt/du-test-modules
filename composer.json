@@ -1,0 +1,35 @@
+{
+    "name": "du/test-modules",
+    "autoload": {
+      "psr-4": {
+        "Codeception\\Module\\": "src"
+      }
+    },
+    "description": "Provides modules for use with Codeception.",
+    "keywords": ["module"],
+    "authors": [{
+      "name": "Russell Simpkins",
+      "email": "russell.simpkins@nytimes.com",
+      "role": "contributor"
+    }],
+    "repositories": [{
+      "type": "vcs",
+      "url": "git@github.com:nytm/php-rust-framework.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:nytm/du-build-tools.git"
+    }],
+    "require": {
+      "nytimes/php-rust-framework": "2.0.2.*",
+      "du/build-tools": "dev-master"
+    },
+    "require-dev": {
+      "codeception/codeception": "2.1.6",
+      "phpdocumentor/phpdocumentor": "2.8.5",
+      "phpmd/phpmd" : "@stable",
+      "fabpot/php-cs-fixer" : "1.0",
+      "squizlabs/php_codesniffer": "1.5.5",
+      "phpunit/phpunit": "4.8.*"
+    }
+}

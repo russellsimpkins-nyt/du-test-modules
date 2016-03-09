@@ -1,0 +1,36 @@
+actor: Tester
+paths:
+    tests: tests
+    log: tests/_log
+    data: tests/_data
+    helpers: tests/_support
+settings:
+    bootstrap: _bootstrap.php
+    suite_class: \PHPUnit_Framework_TestSuite
+    colors: false
+    memory_limit: 1024M
+    log: true
+    verbose: true
+    stderr: true
+modules:
+    config:
+        Db:
+            dsn: ''
+            user: ''
+            password: ''
+            dump: tests/_data/dump.sql
+coverage:
+    enabled: true
+    remote: false
+    whitelist:
+      include:
+        - src/*
+      exclude:
+        - Makefile
+        - src/Makefile
+        - src/routes.json
+        - src/version.json
+        - src/*~
+    blacklist:
+      include:
+        - vendor/*

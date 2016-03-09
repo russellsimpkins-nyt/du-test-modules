@@ -1,0 +1,15 @@
+.git
+READM*
+tests
+rpm.spec
+.DS_Store
+phpdox
+output
+Makefile
+composer.lock
+composer.json
+codeception.yml
+.rsync-excludes
+.#*
+.gitignore
+bitlyapi.json
